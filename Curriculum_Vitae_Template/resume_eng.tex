@@ -1,0 +1,265 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj
+% Adaptation : Hyunggi Chang
+% Filled for : Jae Won Yoon
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{kotex} % Korean names when needed
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSummary}[1]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeEmployment}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+      \small{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeResearch}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} {\small #4 \vspace{-2pt}} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeTalk}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCommunity}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeEmploymentListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeEmploymentListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Jae Won Yoon (윤재원)} & Email : \href{mailto:larry1121@korea.ac.kr}{larry1121@korea.ac.kr} \\
+  {} & Mobile : (+82) 010-5872-0343 \\
+\end{tabular*}
+
+%-----------Summary-----------------
+\section{Summary}
+  \resumeSubHeadingListStart
+      \resumeSummary{
+      Product owner and founder leading AI/data-powered services from concept to launch.\\
+      Experienced in designing service architectures, automation pipelines, and leading PoCs with early customers.\\
+      Drives product decisions at the intersection of tech and business with lean, execution-focused teams.
+      }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Employment}
+  \resumeEmploymentListStart
+    \resumeEmployment
+      {(주) 세모랩스 (SemoLabs)}{South Korea}
+      {Founder / CEO}{Sep. 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{Founded AI/data-driven services startup SemoLabs; own product planning, engineering, and business strategy.}
+            \resumeItem{Planned and designed flagship service “SEMO Lens”; led MVP development and early customer PoCs to validate direction.}
+            \resumeItem{Won and delivered partner project “Kickback” (rewards/commerce service), owning requirements, schedule/quality, and stakeholder communication.}
+            \resumeItem{Led technology and business decisions, team building, and external collaborations to expand product portfolio and revenue base.}
+        \resumeItemListEnd   
+        
+    \resumeEmployment
+      {(주)하신}{South Korea}
+      {Product Owner}{Jun. 2025 -- Sep. 2025}
+      \resumeItemListStart
+          \resumeItem{Joined AI-based WBS auto-generation solution “SEMO”; designed service architecture and implemented core features (project creation, WBS automation, credit/payment logic).}
+          \resumeItem{Filed two patents as lead inventor on AI-driven project management: user-request-based task tree auto-generation; reporting/monitoring system for external resources aligned to work plans.}
+      \resumeItemListEnd
+      
+    \resumeEmployment
+      {제29전술개발훈련비행전대}{South Korea}
+      {Information System Operator (military service)}{May. 2023 -- Feb. 2025}
+      \resumeItemListStart
+          \resumeItem{Served as an information system operator.}
+      \resumeItemListEnd
+      
+  \resumeEmploymentListEnd
+
+%-----------Projects-----------------
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProject
+      {SEMO Lens – data analysis/monitoring SaaS}
+         {Founder / Lead Developer \quad Aug. 2025 -- Dec. 2025}
+         \resumeItemListStart
+             \resumeItem{Planned/designed an AI-driven conversion diagnostics SaaS; built URL-based automated analysis pipeline and evidence-centered reports (screenshots, checklists).}
+             \resumeItem{Led PoCs with D2C/commerce sellers, validated conversion-friction detection accuracy, and set sales messaging plus pricing/packaging strategy.}
+         \resumeItemListEnd
+    
+    \resumeProject
+      {Kickback Technologies automation}
+      {Owner \quad Oct. 2025 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{Designed and built Airtable–Stripe–Zapier data schema and settlement pipeline to automate multi-level commission payouts.}
+        \resumeItem{Reduced manual operations dependency while improving accuracy and turnaround of commission aggregation and disbursement.}
+      \resumeItemListEnd
+
+    \resumeProject
+      {Certification track (candidate)}
+      {Jan. 2022 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{SQLD (23.12.15), Linux Master Level 2 (25.01.03), Search Ads Marketer Level 1 (25.01.10).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Awards \& Honors}
+    \resumeSubHeadingListStart
+    
+        \resumeTalk{\shortstack[l]{KAIST Misinformation Response Idea Challenge — \\ Grand Prize (KAIST President’s Award)}}{Nov. 2024}
+            \resumeItemListStart
+                \resumeItem{Proposed CAMS, an OSINT framework collecting public SNS data; led collaboration/scheduling and plans for fake news/deepfake detection models.}
+            \resumeItemListEnd
+
+        \resumeTalk{11th ROK Army Startup Contest — KOSME Director’s Award}{May. 2024}
+            \resumeItemListStart
+                \resumeItem{Planned photo-sharing/organizing platform ShutterShare; authored image-classification model plans and IR materials via Figma prototype.}
+            \resumeItemListEnd
+
+        \resumeTalk{Korea Univ. EEE HandS Craft Competition — Excellence Award}{Feb. 2024}
+            \resumeItemListStart
+                \resumeItem{Led Python-based automated SNS content generation and upload pipeline for informational posts.}
+            \resumeItemListEnd
+
+        \resumeTalk{ku\_hackuton\_2023 — 1st Place}{Aug. 2023}
+            \resumeItemListStart
+                \resumeItem{Built “모잇지,” a local-business social platform; handled planning and React-based frontend.}
+            \resumeItemListEnd
+
+        \resumeTalk{Startup Express Winter Season Finalist — Korea Univ. Business School}{Dec. 2022 / 2025}
+            \resumeItemListStart
+                \resumeItem{Developed communication initiator “ㄱ?”, implementing React Native frontend and Firebase Cloud Messaging.}
+            \resumeItemListEnd
+
+        \resumeTalk{LINC3.0 KU Startup Club Selection — Korea Univ. LINC3.0}{Oct. 2022}
+            \resumeItemListStart
+                \resumeItem{Team lead for KUplace spatial-information sharing service; led development.}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------Conference Presentations-----------------
+\section{Conference Presentations (Posters)}
+    \resumeSubHeadingListStart
+        \resumeTalk{\shortstack[l]{Context-Aware LLM-Driven Structured \\ Complex Task Decomposition \\ for Human-Executed Projects (2025 KU AI Forum, Team Lead)}}{Sep. 2025 — KU Centennial Hall}
+        \resumeTalk{\shortstack[l]{KUPLACE app-based RAG utilizing \\ KU spatial information chatbot \\ development (2024 KU AI Forum, Team Lead)}}{Oct. 2024 — KU Centennial Hall}
+    \resumeSubHeadingListEnd
+
+%-----------Activities-----------------
+\section{Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Hands (EE, KU) — Committee Member}{Nov. 2024 -- Dec. 2025}{\shortstack[l]{Led major/engineering study groups \\ and project activities}}{South Korea}
+        \resumeSubheading{Healer Startup Club — Team Lead}{Oct. 2022 -- Jan. 2023}{\shortstack[l]{Planned KUplace and built Android/web versions; \\ developed communication initiator “ㄱ?”}}{South Korea}
+        \resumeSubheading{2025 MCL Summer Internship (KU MCL) — Research Intern}{Jul. 2025 -- Jul. 2025}{\shortstack[l]{Completed Python/PyTorch-based CV/ML/AI fundamentals; \\ implemented age estimation and video interpolation models using lab codebase}}{South Korea}
+        \resumeSubheading{LG Aimers Cohort 7 — Participant}{Jul. 2025 -- Sep. 2025}{\shortstack[l]{Built LightGBM Direct+Recursive+Naive blending pipeline \\ and auto-submission validator for resort demand forecasting hackathon (top 10\%)}}{South Korea}
+        \resumeSubheading{Samsung Electronics DS Shining Star 1st Cohort — Participant}{Aug. 2022 -- Aug. 2022}{\shortstack[l]{Completed training on eight semiconductor processes; \\ won 1st place in team project presentation}}{South Korea}
+        \resumeSubheading{Wadiz “ChatGPT Profit Playbook” Crowdfunding — Lead Author}{Jan. 2023 -- May. 2023}{\shortstack[l]{Authored prompt-engineering-based workflows for web/blog creation, \\ OpenAI API automation, and SEO/operations; \\ achieved ~3B KRW funding, 4.3/5 supporter rating}}{South Korea}
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Korea University}{Seoul, South Korea}
+      {B.S. in Electrical and Electronic Engineering \quad GPA: 4.16 / 4.5}{Mar. 2021 -- Present}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

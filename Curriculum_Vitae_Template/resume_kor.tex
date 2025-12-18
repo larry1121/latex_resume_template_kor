@@ -1,0 +1,265 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj
+% Adaptation : Hyunggi Chang
+% Filled for : 윤재원
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{kotex} % Enable Korean!
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSummary}[1]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeEmployment}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+      \small{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeResearch}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} {\small #4 \vspace{-2pt}} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeTalk}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCommunity}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeEmploymentListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeEmploymentListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large 윤재원 (Jae Won Yoon)} & Email : \href{mailto:larry1121@korea.ac.kr}{larry1121@korea.ac.kr} \\
+  {} & Mobile : (+82) 010-5872-0343 \\
+\end{tabular*}
+
+%-----------Summary-----------------
+\section{요약}
+  \resumeSubHeadingListStart
+      \resumeSummary{
+      AI·데이터 기반 서비스 기획과 제품 개발을 주도해온 Product Owner이자 창업가입니다.\\
+      서비스 구조 설계, 자동화 파이프라인 구축, 초기 고객 PoC 리딩 경험을 갖추고 있습니다.\\
+      기술/사업 의사결정과 팀 빌딩을 통해 제품 고도화와 실행을 끌어갑니다.
+      }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{경력}
+  \resumeEmploymentListStart
+    \resumeEmployment
+      {(주) 세모랩스}{South Korea}
+      {대표이사 (Founder/CEO)}{Sep. 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{AI·데이터 기반 서비스 스타트업 세모랩스를 창업하여 제품 기획, 개발, 사업 전략 수립을 전반적으로 총괄.}
+            \resumeItem{주요 서비스 ‘SEMO Lens’를 기획·설계하고 MVP 개발 및 초기 고객사 PoC를 리딩하여 서비스 방향성을 검증.}
+            \resumeItem{파트너사 리워드/커머스 서비스 ‘Kickback’ 외주 개발 프로젝트를 수주, 요구사항 정의부터 일정/품질 관리·커뮤니케이션을 총괄.}
+            \resumeItem{기술·사업 관점에서 의사결정을 주도하며 팀 빌딩과 대외 협업을 통해 제품 포트폴리오와 매출 기반을 확장.}
+        \resumeItemListEnd   
+        
+    \resumeEmployment
+      {(주)하신}{South Korea}
+      {Product Owner}{Jun. 2025 -- Sep. 2025}
+      \resumeItemListStart
+          \resumeItem{AI 기반 WBS 자동 생성 솔루션 ‘SEMO’ 개발에 참여하여 서비스 구조 설계 및 핵심 기능(프로젝트 생성·WBS 자동화·크레딧/결제 로직 등) 구현.}
+          \resumeItem{대표 발명자로 AI 기반 프로젝트 관리 기술특허 2건 출원: 사용자 요청 기반 업무 트리 자동 생성장치 및 그 제어 방법; 업무 계획에 대응되는 외부 리소스의 보고 및 모니터링 시스템.}
+      \resumeItemListEnd
+      
+    \resumeEmployment
+      {제29전술개발훈련비행전대}{South Korea}
+      {정보체계운영병}{May. 2023 -- Feb. 2025}
+      \resumeItemListStart
+          \resumeItem{정보체계운영병 복무.}
+      \resumeItemListEnd
+      
+  \resumeEmploymentListEnd
+
+%-----------Projects-----------------
+
+\section{프로젝트}
+  \resumeSubHeadingListStart
+    \resumeProject
+      {SEMO Lens – 데이터 분석/모니터링 SaaS}
+         {Founder / Lead Developer \quad Aug. 2025 -- Dec. 2025}
+         \resumeItemListStart
+             \resumeItem{AI 기반 상세페이지 전환 진단 SaaS를 기획·설계하고, URL 기반 자동 분석 파이프라인과 증거(스크린샷·체크리스트) 중심 리포트 구조를 설계.}
+             \resumeItem{자사몰·커머스 셀러 대상 PoC를 주도하여 전환 저해 요인 탐지 정확도를 검증하고 세일즈 메시지, 가격/패키지 전략을 정립.}
+         \resumeItemListEnd
+    
+    \resumeProject
+      {Kickback Technologies automation}
+      {총괄 \quad Oct. 2025 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{Airtable–Stripe–Zapier 기반 데이터 스키마와 정산 파이프라인을 설계·구축하여 다단계 커미션 정산을 자동화.}
+        \resumeItem{수동 정산 프로세스를 자동화해 운영 인력 의존도를 낮추고 커미션 집계·지급의 정확성과 처리 속도를 향상.}
+      \resumeItemListEnd
+
+    \resumeProject
+      {자격증 준비 (응시자)}
+      {Jan. 2022 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{SQL 개발자(SQLD) 데이터자격검정(23.12.15), 리눅스마스터 2급(25.01.03), 검색광고 마케터 1급(25.01.10) 예정.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{수상 및 기타}
+    \resumeSubHeadingListStart
+    
+        \resumeTalk{카이스트 허위정보 대응 아이디어 공모전 대상 (카이스트 총장상) — KAIST}{Nov. 2024}
+            \resumeItemListStart
+                \resumeItem{SNS 공개 데이터를 활용한 OSINT 체계 CAMS 제안, 팀장으로 협업·일정관리 및 가짜뉴스/딥페이크 판별 모델 구현 계획 주도.}
+            \resumeItemListEnd
+
+        \resumeTalk{제11회 육군창업경진대회 창업진흥원장상 — 한국경제/육군본부}{May. 2024}
+            \resumeItemListStart
+                \resumeItem{사진 공유/정리 플랫폼 ShutterShare 기획, 이미지 분류 모델 구현 계획 수립 및 피그마 프로토타입 기반 IR 자료 제작.}
+            \resumeItemListEnd
+
+        \resumeTalk{고려대 전기전자공학부 HandS 크래프트 대회 우수상 — 고려대학교 전기전자공학부}{Feb. 2024}
+            \resumeItemListStart
+                \resumeItem{정보성 SNS 콘텐츠 생성·업로드 자동화 시스템 개발, 파이썬 기반 콘텐츠 생성 및 업로드 파이프라인을 리드.}
+            \resumeItemListEnd
+
+        \resumeTalk{ku\_hackuton\_2023 1등 — 고려대학교 디자인조형학부 X 정보대학 X 정보보호학부}{Aug. 2023}
+            \resumeItemListStart
+                \resumeItem{지역 상권 중심 위치기반 소셜 플랫폼 “모잇지” 개발에 참여, 기획과 React 기반 프런트엔드 개발 담당.}
+            \resumeItemListEnd
+
+        \resumeTalk{Startup Express Winter Season 본선 — 고려대학교 경영대학}{Dec. 2022 / 2025}
+            \resumeItemListStart
+                \resumeItem{커뮤니케이션 이니시에이터 ‘ㄱ?’ 개발, React Native 프런트엔드와 Firebase Cloud Messaging 구현 담당.}
+            \resumeItemListEnd
+
+        \resumeTalk{LINC3.0 KU 창업동아리 및 대학혁신지원사업 창업동아리 선정 — 고려대학교 LINC3.0}{Oct. 2022}
+            \resumeItemListStart
+                \resumeItem{KUplace 공간정보 공유 플랫폼 아이템으로 팀장 참여, 개발 주도.}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------Conference Presentations-----------------
+\section{학술 발표 (Poster)}
+    \resumeSubHeadingListStart
+        \resumeTalk{\shortstack[l]{Context-Aware LLM-Driven Structured \\ Complex Task Decomposition \\ for Human-Executed Projects (2025 KU AI Forum, 팀장)}}{Sep. 2025 — 고려대 백주년 기념관}
+        \resumeTalk{\shortstack[l]{KUPLACE app-based RAG utilizing \\ KU spatial information chatbot \\ development (2024 KU AI Forum, 팀장)}}{Oct. 2024 — 고려대 백주년 기념관}
+    \resumeSubHeadingListEnd
+
+%-----------Activities-----------------
+\section{활동}
+    \resumeSubHeadingListStart
+        \resumeSubheading{고려대학교 전기전자공학부 전공학회 Hands 운영진}{Nov. 2024 -- Dec. 2025}{\shortstack[l]{전공 및 개발 스터디 운영, \\ 프로젝트 활동 참여}}{South Korea}
+        \resumeSubheading{창업동아리 healer 팀장}{Oct. 2022 -- Jan. 2023}{\shortstack[l]{KUplace 기획 및 Android/웹 버전 개발, \\ ‘ㄱ?’ 커뮤니케이션 서비스 개발}}{South Korea}
+        \resumeSubheading{2025 MCL Summer Internship (Korea Univ MCL) 학부연구생}{Jul. 2025 -- Jul. 2025}{\shortstack[l]{Python·PyTorch 기반 CV/ML/AI 및 딥러닝 기초 이론·실습 이수, \\ Age Estimation·Video Interpolation 모델 구현 실습}}{South Korea}
+        \resumeSubheading{LG Aimers 7기 수료}{Jul. 2025 -- Sep. 2025}{\shortstack[l]{리조트 수요예측 해커톤에서 LightGBM 블렌딩 파이프라인 \\ 및 제출 자동검증 시스템 구축(상위 10\%)}}{South Korea}
+        \resumeSubheading{삼성전자 DS 샤이닝 스타 1기 참가}{Aug. 2022 -- Aug. 2022}{반도체 8대 공정 학습 및 팀 프로젝트 발표 대회 1등 수상}{South Korea}
+        \resumeSubheading{와디즈 크라우드펀딩 ‘ChatGPT 수익화 활용 비법서’ 메인 저자}{Jan. 2023 -- May. 2023}{\shortstack[l]{ChatGPT 프롬프트 기반 웹/블로그 제작, 자동 콘텐츠 발행, \\ SEO/운영 전략 워크플로 설계·집필(약 3억 펀딩, 서포터 만족도 4.3점)}}{South Korea}
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{학력}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {고려대학교}{Seoul, South Korea}
+      {B.S., 전기전자공학과 \quad GPA: 4.16 / 4.5}{Mar. 2021 -- Present}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
